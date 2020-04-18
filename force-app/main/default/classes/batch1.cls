@@ -19,5 +19,6 @@ public Integer count = 0;
         a.Name = ' Count :' +count+ ' Size : ' +size;
         a.Phone = '8375869062';
         insert a;
+        system.debug('sanjay baro');
     }
 }
