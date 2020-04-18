@@ -1,0 +1,23 @@
+<apex:page controller="DML_Example_2">
+    <apex:form >
+        <apex:pageBlock title="Account">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!create}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account">
+                <apex:inputField value="{!acc.name}"/>
+                <apex:inputField value="{!acc.industry}"/>
+                <apex:inputField value="{!acc.phone}"/>
+                <apex:inputField value="{!acc.rating}"/>
+            </apex:pageBlockSection>  
+            <apex:pageBlockSection title="Opportunity">
+                <apex:inputField value="{!opp.name}"/>
+                <apex:inputField value="{!opp.stagename}"/>
+                <apex:inputField value="{!opp.amount}"/>
+                <apex:inputField value="{!opp.type}"/>
+                <apex:inputField value="{!opp.closedate}"/>
+                </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
